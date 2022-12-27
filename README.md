@@ -80,3 +80,30 @@ Nos permite guardar definiciones de funciones para evitar re-renderizados cuando
 Su principal trabajo es que sirve para memorizar funciones porque las funciones apunta a diferente tipo de memoria.
 
 Y si esa función memorizada cambia, se volverá a renderizar.
+
+
+## useReducer
+El useReducer es un Hook que nos permite manipular el state de nuestros componentes funcionales, esto se logra a través de:
+* Una función reducer
+* Y un función de retorno llamada dispatch con la cual podemos combinar o emparejar el state.
+UseReducer esta basado en la librería Redux, es por ello que, aparecen las palabras, reducer y dispatch.
+
+### ¿Cuándo usar el useReducer?
+Bien, esto no será una respuesta como tal, ya que, depende del tipo de proyecto, pero, se pueden tomar como recomendaciones para tomar una decisión:
+
+* Cuando el estado siguiente del "state" depende del estado anterior.
+* Cuando manejas un objeto JSON como state y tienes subvalores dentro de tu mismo objeto.
+* Cuando la lógica es muy compleja.
+ 
+### ¿Cómo es es un useReducer?
+* Debe ser una función (La tarea que realice, deber hacerce de manera interna)
+* Usualmente recibe dos argumentos
+* Debe ser una función pura
+  * No debe tener efectos secundarios
+  * No debe realizar tareas asincronas
+  * Debe de retornar siempre un estado nuevo
+  * No debe llamar al localStorage o sessionStorage
+  * No debe requerir mas que una acción
+
+
+## useContext
