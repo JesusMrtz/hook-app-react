@@ -10,6 +10,7 @@ import { Padre } from "./07-tarea-memo/Padre";
 import { MemoHook } from "./07-useMemo/MemoHook";
 import { CallbackHook } from "./08-useCallback/CallbackHook";
 import { TodoAppPage } from "./09-useReducer/TodoAppPage";
+import { MainApp } from "./10-useContext/MainApp";
 
 
 export function HookApp () {
@@ -47,7 +48,11 @@ export function HookApp () {
 
 
             {/* useReducer ejemplos */}
-            <TodoAppPage />
+            {/* <TodoAppPage /> */}
+
+
+            {/* useContext ejemplos */}
+            <MainApp />
         </>
     );
 }

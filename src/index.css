@@ -9,3 +9,7 @@ button {
 .pointer {
     cursor: pointer;
 }
+
+.active {
+    color: green !important;
+}

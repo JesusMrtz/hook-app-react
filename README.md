@@ -106,4 +106,7 @@ Bien, esto no será una respuesta como tal, ya que, depende del tipo de proyecto
   * No debe requerir mas que una acción
 
 
-## useContext
+## UseContext
+Ayuda a compartir información en un estado global de la aplicación.
+
+También ayuda evitar que el envio de props sea un caos cuando necesitemos enviarle información extra del padre a un desendiente lejano del árbol y viceversa. Pero también puede enviar información a aquellos componentes que no tengan relación entre sí siempre y cuando el "Context" los envuelva
