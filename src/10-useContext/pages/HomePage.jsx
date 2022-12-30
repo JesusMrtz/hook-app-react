@@ -9,7 +9,7 @@ export const HomePage = () => {
     <>
         <h3>HomePage</h3>
         <hr />
-        <pre>
+        <pre data-testid="pre-user">
           {
             JSON.stringify(user, null, 3)
           }

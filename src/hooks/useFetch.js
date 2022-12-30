@@ -9,9 +9,8 @@ export function useFetch( url ) {
     });
 
     async function getPokemons() {
-        setPokemon({ ...pokemon, isLoading: true });
-
         try {
+            setPokemon({ ...pokemon, isLoading: true });
             const response = await fetch(url);
             const data = await response.json();
 

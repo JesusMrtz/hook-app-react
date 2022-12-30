@@ -6,8 +6,6 @@ import { ShowPokemonComponent } from "./ShowPokemonComponent";
 export function MultiplesCustomHooks() {
     const { counter, incrementCounter, decrementCounter } = useCounter(1);
     const { data, isLoading } = useFetch(`https://pokeapi.co/api/v2/pokemon/${ counter }`);
-
-    
     return (
         <>
             <h2>Pokemon</h2>

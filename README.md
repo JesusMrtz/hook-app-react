@@ -24,7 +24,7 @@ Sirve para disparar efectos secundarios y recibe una función como argumento
     }, []);
   ```
 
-* Podemos tener más de un formState por separado y es recomendable hacerlo asi por el equipo de React.
+* Podemos tener más de un useEffect por separado y es recomendable hacerlo asi por el equipo de React.
   ```
   /** Este código se ejecutará cuando la variable formState cambie **/
    useEffect(() => {

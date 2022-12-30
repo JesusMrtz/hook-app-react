@@ -5,15 +5,15 @@ export function useCounter(initialValue = 10) {
     const [ counter, setCounter ] = useState(initialValue);
 
     function incrementCounter(value = 1) {
-        setCounter(counter + value);
+        setCounter((previusCounter) => previusCounter + value);
     }
 
     function decrementCounter(value = 1) {
-        setCounter(counter - value);
+        setCounter((previusCounter) => previusCounter - value);
     }
 
     function resetCounter() {
-        setCounter(initialValue);
+        setCounter(() => initialValue);
     }
 
 

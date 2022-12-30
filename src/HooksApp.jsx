@@ -25,7 +25,7 @@ export function HookApp () {
             {/* useEffect ejemplos*/}
             {/* <SimpleFormComponent /> */}
             {/* <FormWithCustomHookComponent /> */}
-            {/* <MultiplesCustomHooks /> */}
+            <MultiplesCustomHooks />
 
 
             {/* useRef ejemplos */}
@@ -52,7 +52,7 @@ export function HookApp () {
 
 
             {/* useContext ejemplos */}
-            <MainApp />
+            {/* <MainApp /> */}
         </>
     );
 }

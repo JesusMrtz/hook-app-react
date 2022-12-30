@@ -5,7 +5,9 @@ export function TodoItemComponent({ todo, onDeleteTodo, onToggleTodo }) {
 
     return (
     <li className="list-group-item list-group-item-action d-flex justify-content-between">
-        <span className={`align-self-center ${todo.done ? 'text-decoration-line-through' : ''} pointer`} onClick={() => onToggleTodo(todo.id)}>{ todo.description }</span>
+        <span data-testid="span" className={`align-self-center ${todo.done ? 'text-decoration-line-through' : ''} pointer`} onClick={() => onToggleTodo(todo.id)}>
+            { todo.description }
+        </span>
         <button className="btn btn-danger" onClick={ () => onDeleteTodo(todo.id) }>Eliminar</button>
     </li>  
     );
